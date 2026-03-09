@@ -24,6 +24,15 @@ while (true)
         break;
     }
 
+    // Validação da palavra digitada
+    if (direcao != "entrada" && direcao != "saida")
+    {
+        ForegroundColor = ConsoleColor.Red;
+        WriteLine("Palavra inválida, tente novamente.");
+        ResetColor();
+        continue;
+    }
+
     ForegroundColor = ConsoleColor.Cyan;
     Write("Digite a quantidade de turistas (0 a 4): ");
     ResetColor();
@@ -37,7 +46,7 @@ while (true)
         continue;
     }
 
-    string dataHora = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+    string dataHora = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");  /// Foi pesquisado 
 
     if (direcao == "entrada")
     {
@@ -47,25 +56,18 @@ while (true)
         WriteLine($"[{dataHora}] Entrada registrada: {turistas} turistas");
         ResetColor();
     }
-    else if (direcao == "voltando")
+    else if (direcao == "saida")
     {
         totalTuristas -= turistas;
 
         if (totalTuristas < 0)
         {
-            totalTuristas = 0; 
+            totalTuristas = 0;
         }
 
         ForegroundColor = ConsoleColor.Yellow;
         WriteLine($"[{dataHora}] Saída registrada: {turistas} turistas");
         ResetColor();
-    }
-    else
-    {
-        ForegroundColor = ConsoleColor.Red;
-        WriteLine("Direção inválida. Tente novamente.");
-        ResetColor();
-        continue;
     }
 
     ForegroundColor = ConsoleColor.Magenta;
