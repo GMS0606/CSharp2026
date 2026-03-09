@@ -5,42 +5,42 @@ int turistas, totalTuristas = 0;
 
 while (true)
 {
-    ForegroundColor = ConsoleColor.Magenta;
+    ForegroundColor = ConsoleColor.Magenta;  /// Foi pesquisado 
     WriteLine("Aplicativo de controle de fluxo de carro");
     WriteLine("Parque nacional dos Lençóis Maranhenses");
     WriteLine();
     ResetColor();
 
-    ForegroundColor = ConsoleColor.Cyan;
+    ForegroundColor = ConsoleColor.Cyan;  /// Foi pesquisado 
     Write("Digite o fluxo de carro (entrada/saida) ou sair para encerrar a aplicação: ");
     ResetColor();
     direcao = ReadLine()!;
 
     if (direcao == "sair")
     {
-        ForegroundColor = ConsoleColor.Yellow;
+        ForegroundColor = ConsoleColor.Yellow;  /// Foi pesquisado 
         WriteLine("Expediente encerrado ;)");
         ResetColor();
         break;
     }
 
-    // Validação da palavra digitada
+   
     if (direcao != "entrada" && direcao != "saida")
     {
-        ForegroundColor = ConsoleColor.Red;
+        ForegroundColor = ConsoleColor.Red;  /// Foi pesquisado 
         WriteLine("Palavra inválida, tente novamente.");
         ResetColor();
         continue;
     }
 
-    ForegroundColor = ConsoleColor.Cyan;
+    ForegroundColor = ConsoleColor.Cyan; /// Foi pesquisado 
     Write("Digite a quantidade de turistas (0 a 4): ");
     ResetColor();
     turistas = int.Parse(ReadLine()!);
 
     if (turistas <= 0 || turistas > 4)
     {
-        ForegroundColor = ConsoleColor.Red;
+        ForegroundColor = ConsoleColor.Red;  /// Foi pesquisado 
         WriteLine("Quantidade de turistas inválida. Tente novamente.");
         ResetColor();
         continue;
@@ -52,7 +52,8 @@ while (true)
     {
         totalTuristas += turistas;
 
-        ForegroundColor = ConsoleColor.Green;
+        ForegroundColor = ConsoleColor.Green;  /// Foi pesquisado 
+
         WriteLine($"[{dataHora}] Entrada registrada: {turistas} turistas");
         ResetColor();
     }
@@ -65,12 +66,12 @@ while (true)
             totalTuristas = 0;
         }
 
-        ForegroundColor = ConsoleColor.Yellow;
+        ForegroundColor = ConsoleColor.Yellow;  /// Foi pesquisado 
         WriteLine($"[{dataHora}] Saída registrada: {turistas} turistas");
         ResetColor();
     }
 
-    ForegroundColor = ConsoleColor.Magenta;
+    ForegroundColor = ConsoleColor.Magenta;  /// Foi pesquisado 
     WriteLine($"Total de turistas no parque: {totalTuristas}");
     ResetColor();
 }
