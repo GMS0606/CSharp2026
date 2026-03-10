@@ -6,6 +6,7 @@ int turistas, totalTuristas = 0;
 while (true)
 {
     ForegroundColor = ConsoleColor.Magenta;  /// Foi pesquisado 
+
     WriteLine("Aplicativo de controle de fluxo de carro");
     WriteLine("Parque nacional dos Lençóis Maranhenses");
     WriteLine();
