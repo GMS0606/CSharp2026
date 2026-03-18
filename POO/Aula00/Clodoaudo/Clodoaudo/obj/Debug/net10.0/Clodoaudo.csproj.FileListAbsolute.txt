@@ -1,0 +1,15 @@
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\bin\Debug\net10.0\Clodoaudo.exe
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\bin\Debug\net10.0\Clodoaudo.deps.json
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\bin\Debug\net10.0\Clodoaudo.runtimeconfig.json
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\bin\Debug\net10.0\Clodoaudo.dll
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\bin\Debug\net10.0\Clodoaudo.pdb
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.AssemblyInfoInputs.cache
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.AssemblyInfo.cs
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.csproj.CoreCompileInputs.cache
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.sourcelink.json
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.dll
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\refint\Clodoaudo.dll
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.pdb
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\Clodoaudo.genruntimeconfig.cache
+C:\Users\FIC\Documents\CSharp2026\POO\Aula00\Clodoaudo\Clodoaudo\obj\Debug\net10.0\ref\Clodoaudo.dll
