@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("RetanguloComPOO")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Funcionario")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+832b5dca336bafdf198bf3f334e1f76251d2aaf7")]
-[assembly: System.Reflection.AssemblyProductAttribute("RetanguloComPOO")]
-[assembly: System.Reflection.AssemblyTitleAttribute("RetanguloComPOO")]
+[assembly: System.Reflection.AssemblyProductAttribute("Funcionario")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Funcionario")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
