@@ -11,7 +11,7 @@ namespace Aluno
         public double nota2;
         public double nota3;
 
-        // Construtor
+        // Construtor 
         public Nota(string nome, double nota1, double nota2, double nota3)
         {
             this.nome = nome;
@@ -20,16 +20,27 @@ namespace Aluno
             this.nota3 = nota3;
         }
 
-        //Método 
-
-        public void MostrarNotas()
+        // Métodos 
+        public double NotaFinal()
         {
-            Console.WriteLine("Notas do aluno:");
+            return nota1 + nota2 + nota3;
+        }
 
-            Console.WriteLine(nota1);
-            Console.WriteLine(nota2);
-            Console.WriteLine(nota3);
+        public bool AprovadoOuReprovado()
+        {
+            return NotaFinal() >= 60.0;
+        }
 
+        public double Ponto()
+        {
+            if (AprovadoOuReprovado())
+            {
+                return 0.0;
+            }
+            else
+            {
+                return 60.0 - NotaFinal();
+            }
         }
     }
 }

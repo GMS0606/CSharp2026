@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aluno")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b5bd0ab3aa57e5b6b802debee860ffbf17c68e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47e95b8c9c93321e619b8dc3af9363ea4c39f245")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aluno")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aluno")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
