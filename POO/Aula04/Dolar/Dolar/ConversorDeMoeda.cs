@@ -17,9 +17,11 @@ namespace Dolar
         }
         public static double CalcularValor()
         {
+            
             double Valor = cotacao * qtd;
             double ValorComIof = Valor + (Valor * IOF / 100);
             return ValorComIof;
+            
         }
     }
 }
