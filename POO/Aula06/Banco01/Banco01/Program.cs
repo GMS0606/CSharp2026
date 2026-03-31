@@ -13,7 +13,7 @@ string nome = ReadLine();
 Write("Deseja fazer deposito inicial ( S/N): ");
 char resposta = char.Parse(ReadLine().ToLower());
 
-if (resposta == 's')s
+if (resposta == 's')
 {
     Write("Entre com o valor de deposito inicial: ");
     double dep = double.Parse(ReadLine());
