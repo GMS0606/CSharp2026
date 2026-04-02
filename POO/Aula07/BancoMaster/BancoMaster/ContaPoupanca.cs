@@ -6,31 +6,37 @@ namespace BancoMaster
 {
     internal class ContaPoupanca : Conta
     {
-        private double TaxadeJuros;
-        public double taxa
+		//Campo 
+		private double juros;
+
+        //Propriedade
+        public double TaxaDeJuros
+		{
+			get { return juros; }
+			set { juros = value; }
+		}
+
+        //Construtores
+        public ContaPoupanca(string titularConta, int numeroConta, double taxaDeJuros) : base(titularConta, numeroConta)
         {
-            get { return taxa; }
-            set { taxa = value; }
+            TaxaDeJuros = taxaDeJuros;
         }
 
-        //Contrtor
-        public ContaPoupanca(string titularConta, int numeroConta, double taxadeJuro) : base(titularConta, numeroConta)
+        public ContaPoupanca(double saldoConta, string titularConta, int numeroConta, double taxaDeJuros) : base(saldoConta, titularConta, numeroConta)
         {
-            TaxadeJuros = taxadeJuro;
+            TaxaDeJuros = taxaDeJuros;
         }
 
-        public ContaPoupanca(double saldoConta, string titularConta, int numeroConta, double taxadeJuro) : base(saldoConta, titularConta, numeroConta)
-        {
-            TaxadeJuros = taxadeJuro;
+        //Métodos 
+
+        public void AtualizacaoDoSaldo()
+        { 
+           SaldoConta = SaldoConta + (SaldoConta * TaxaDeJuros);
         }
 
-       public void Saque(double quantia)
+        public override void Saque(double quantia)
         {
-            SaldoConta -= quantia;
+            SaldoConta -= quantia - 5;
         }
-
-
-
-
-    }
+	}
 }

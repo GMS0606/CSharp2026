@@ -3,33 +3,34 @@ namespace BancoMaster
 {
     internal class Conta
     {
-		private int numero;
-		private string  titular;
-		private double saldo;
+        //Campos
+        private int numero;
+        private string titular;
+        private double saldo;
 
 
-
+        //Propriedades
         public double SaldoConta
-		{
-			get { return saldo; }
-			set { saldo = value; }	
-		}
+        {
+            get { return saldo; }
+            set { saldo = value; }
+        }
 
 
-		public string  TitularConta
-		{
-			get { return titular; }
-			set { titular = value; }
-		}
+        public string TitularConta
+        {
+            get { return titular; }
+            set { titular = value; }
+        }
 
 
-		public int NumeroConta
-		{
-			get { return numero;; }
-			set { numero = value; }
-		}
+        public int NumeroConta
+        {
+            get { return numero; ; }
+            set { numero = value; }
+        }
 
-		//Contrutor
+        //Contrutor
         public Conta(double saldoConta, string titularConta, int numeroConta)
         {
             SaldoConta = saldoConta;
@@ -39,11 +40,13 @@ namespace BancoMaster
 
         public Conta(string titularConta, int numeroConta) : this(numeroConta, titularConta, 0)
         {
-			SaldoConta = 0;
+            SaldoConta = 0;
         }
-        public void Saque(double quantia)
+
+        //Métodos
+        public virtual void Saque(double quantia)
         {
-            SaldoConta -= quantia;
+            SaldoConta -= quantia + 5;
         }
         public void Deposito(double quantia)
         {
