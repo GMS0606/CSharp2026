@@ -21,7 +21,7 @@
         }
 
 
-        public Pessoa DadosCliente 
+        public Pessoa DadosCliente
         {
             get { return cliente; }
             set { cliente = value; }
@@ -38,14 +38,22 @@
         //Métodos 
         public void Deposito(double qtd)
         {
-            saldo += qtd;
+            SaldoConta += qtd;
         }
 
         public void Saque(double qtd)
         {
-            saldo -= qtd;
+            SaldoConta -= qtd;
         }
 
+        public override string ToString()
+        {
+            return $"Dados da conta - {Tipo.ContaNormal} " +
+                $"\n\tNome so titular: {cliente.nome}" +
+                $"\n\tCPF do cliente: {cliente.cpf}" +
+                $"\n\tNúmero da conta: {numero}" +
+                $"\n\tSaldo da conta: {SaldoConta}";
 
+        }
     }
 }

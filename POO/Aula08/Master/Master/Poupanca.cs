@@ -27,10 +27,11 @@ namespace Master
 
 		public void consulta()
 		{
-			Console.WriteLine($"Dados do cliente: \n" +
-				$"\t Nome: {DadosCliente}\n" +
+			Console.WriteLine($"Dados do cliente - {Tipo.ContaPoupanca}\n" +
+				$"\t Nome: {DadosCliente.nome}\n" +
 				$"\t Numero: {Numeroconta}\n" +
-				$"\t Saldo: {SaldoConta}");
+				$"\t Saldo: {SaldoConta}\n" +
+				$"\t Rendimento: {rendimento}%");
 		}
 	}
 }
