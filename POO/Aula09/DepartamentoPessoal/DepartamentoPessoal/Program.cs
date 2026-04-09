@@ -32,16 +32,18 @@ for (int i = 0; i < n; i++)
         string nome = ReadLine();
         Write("Horas trabalhadas: ");
         int h = int.Parse(ReadLine());
-        Write("Valor da hora");
+        Write("Valor da hora: ");
         double v = double.Parse(ReadLine());
         Write("Depesa adicional: R$");
         double d = double.Parse(ReadLine());
 
         colaboradores.Add(new Terceiro(nome, h, v, d));
     }
+}
+
     WriteLine("-Pagamento-");
+
     foreach (var colab in colaboradores)
     {
-        colaboradores[colab].ToString();
+        WriteLine(colab.ToString());
     }
-}
