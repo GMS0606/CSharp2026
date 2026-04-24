@@ -15,13 +15,16 @@ namespace SistemaBancario.Classes.Contextos
         //Métodos
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=ECFP507D1319373\SQLEXPRESS;Database=BancoDB;Trusted_Connection=True;TrustServerCertificate=True;");
+            // Usando SQLServer
+            optionsBuilder.UseSqlServer(
+            @"Server=(localdb)\MSSQLLocalDB;Database=BancoDB;Trusted_Connection=True;TrustServerCertificate=True;");
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Banco>(
-            entity =>
+                entity =>
             {
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.NumeroConta).IsRequired();
@@ -29,7 +32,7 @@ namespace SistemaBancario.Classes.Contextos
                 entity.Property(e => e.Saldo).HasColumnType("decimal(18,2)");
             }
 
-            );
+             );
         }
     }
 }

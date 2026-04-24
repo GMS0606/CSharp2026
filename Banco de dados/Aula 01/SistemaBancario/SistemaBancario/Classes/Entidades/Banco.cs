@@ -67,7 +67,7 @@
         /// 
         public void Deposito(decimal valor)
         {
-            if (valor<=0)
+            if (valor <= 0)
             {
                 Console.WriteLine("Valor de depósito deve ser positivo");
                 return;
@@ -97,9 +97,10 @@
         }
 
         ///<summary>
-        ///Exibir os dados da conta no console 
-        ///Mostra numero da dnta, titular 
-
+        ///Exibe os dados da conta no console
+        ///Mostra número da conta, titular e saldo atual
+        /// </summary>
+        /// 
         public void ExibirDados()
         {
             Console.WriteLine("\n---Dados da conta---");
@@ -108,8 +109,5 @@
             Console.WriteLine($"Saldo: {Saldo:C}");
             Console.WriteLine("--------------------\n");
         }
-
-
-
     }
 }
